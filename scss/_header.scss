@@ -1,0 +1,17 @@
+.header{
+    font-size: 47px;
+    font-family: $main-font;
+    font-weight:400;
+
+    &--color {
+      color: $third-color;
+    }
+
+    &--dark {
+      color: #000;
+    }
+
+    &--higher {
+      font-size: 61px;
+    }
+  }

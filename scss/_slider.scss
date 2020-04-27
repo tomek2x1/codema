@@ -1,0 +1,112 @@
+.slider {
+  width: 100vw;
+  height: 312px;
+
+  &__carousel {
+    width: 100vw;
+    height: 312px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__wrapper {
+    height: 312px;
+    width: 400vw;
+    display: flex;
+    transition: all 0.3s;
+  }
+
+  &__arrow {
+    position: absolute;
+    top: 50%;
+    transform:translateY(-50%);
+    cursor: pointer;
+
+    &--left {
+      left: 10px;
+    }
+
+    &--right {
+      right: 10px;
+    }
+  }
+
+  &__dots-wrapper{
+    position:absolute;
+    bottom:20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width:100px;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+  }
+
+    &__dot{
+    height:12px;
+    width:12px;
+    background:$first-color;
+    border-radius:50%;
+    cursor:pointer;
+
+    &--selected{
+      background-color: $third-color;
+    }
+  }
+}
+
+.slide {
+  width: 100vw;
+  display: flex;
+  height: 100%;
+  background: url("../assets/chandler-cruttenden-NLD95k-yDkY-unsplash@2x.png");
+  background-size: cover;
+  position: relative;
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(96deg, #272727 0%, $second-color 55%, $third-color 100%) 0%
+      0% no-repeat padding-box;
+    opacity: 0.55;
+  }
+  &__wrapper {
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+  }
+
+
+  &__button {
+    width: 280px;
+    height: 91px;
+    background: transparent linear-gradient(74deg, $second-color 0%, $third-color 100%) 0%
+      0% no-repeat padding-box;
+    box-shadow: 0px 0px 10px #000000;
+    transform: skewX(-20deg);
+    font-size: 37px;
+    cursor: pointer;
+    border: 0;
+
+    &:hover {
+      background: transparent
+        linear-gradient(
+          74deg,
+          lighten($second-color, 10%) 0%,
+          darken($third-color, 5%) 100%
+        )
+        0% 0% no-repeat padding-box;
+    }
+
+    &-oblique {
+      transform: skewX(20deg);
+      display: inline-block;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+
+$first-color:#fff;
+$second-color:#4181FF;
+$third-color: #D501E4;
+
+$main-font: 'Oswald', sans-serif;
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    color:$first-color;
+    text-transform:uppercase;
+    font-family: $main-font;
+}
+
+
