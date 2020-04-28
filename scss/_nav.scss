@@ -1,0 +1,132 @@
+.nav {
+  background: transparent
+    linear-gradient(
+      91deg,
+      #242f40 0%,
+      #33486b 16%,
+      #092757 33%,
+      #3e2b5a 51%,
+      #335347 77%,
+      #07090d 100%
+    )
+    0% 0% no-repeat padding-box;
+  opacity: 0.9;
+  display: flex;
+  justify-content: flex-end;
+
+  &__wrapper {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 20px 0px;
+  }
+
+  &__list {
+    list-style: none;
+    flex-direction: row;
+
+    &-row {
+      display: flex;
+      flex-grow: 1;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+      margin-right: -30px;
+    }
+
+    &--social {
+      width: 40px;
+      transform: skewX(20deg);
+      margin-right: -8px;
+      background: #122A50 0% 0% no-repeat padding-box;
+    }
+  }
+  &__item {
+    height: 80px;
+    font-size: 15px;
+    font-weight: 300;
+    transform: skewX(20deg);
+    margin-right: 2px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 0px 10px #ffffff29;
+    opacity: 1;
+
+    &--social {
+      height: 37px;
+      width: 100%;
+      transform: skewX(0deg);
+    }
+
+    &--social:first-child {
+      margin-bottom: 6px;
+    }
+
+    &--home {
+      background: transparent linear-gradient(110deg, #0b2246 0%, #173058 100%)
+        0% 0% no-repeat padding-box;
+    }
+
+    &--add {
+      background: transparent linear-gradient(110deg, #173058 0%, #39126b 100%)
+        0% 0% no-repeat padding-box;
+    }
+
+    &--earn {
+      background: transparent linear-gradient(110deg, #39126b 0%, #105477 100%)
+        0% 0% no-repeat padding-box;
+    }
+
+    &--payment {
+      background: transparent linear-gradient(110deg, #105477 0%, #000000 100%)
+        0% 0% no-repeat padding-box;
+    }
+
+    &--vip {
+      background: transparent linear-gradient(111deg, #000000 0%, #0a2a3a 100%)
+        0% 0% no-repeat padding-box;
+    }
+
+    &--login {
+      flex-basis: 300px;
+      padding-right: 70px;
+      background: transparent linear-gradient(103deg, #0b2246 0%, #173058 100%)
+        0% 0% no-repeat padding-box;
+    }
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transform: skewX(-20deg);
+    height: 100%;
+    padding: 10px 20px;
+
+    &--social {
+      width: 100%;
+    }
+  }
+
+  &__image {
+    height: 15px;
+    margin-right: 10px;
+    text-align: center;
+
+    &--social {
+      text-align: center;
+    }
+  }
+
+  &__earn-icon {
+    background: linear-gradient(0deg, #4181ff 0%, #d501e4 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 20px;
+    margin-right: 10px;
+    font-weight: 500;
+  }
+}

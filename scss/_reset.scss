@@ -15,3 +15,13 @@ $main-font: 'Oswald', sans-serif;
 }
 
 
+body{
+    width:100vw;
+    min-height:100vh;
+    overflow: hidden;
+    background-image: url(../assets/hizir-kaya-0q90Mumo-xE-unsplash.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+

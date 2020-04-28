@@ -1,3 +1,5 @@
+// // Slider
+
 const slider = document.querySelector(".slider__wrapper");
 const leftArrow = document.querySelector(".slider__arrow--left");
 const rightArrow = document.querySelector(".slider__arrow--right");

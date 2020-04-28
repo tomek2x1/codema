@@ -1,0 +1,117 @@
+.store {
+  margin: 2px 0px;
+  display: flex;
+  flex-wrap: no-wrap;
+
+  &__box {
+    flex-basis: 230px;
+    background: transparent linear-gradient(70deg, #4181ff 0%, #d501e4 100%) 0%
+      0% no-repeat padding-box;
+    box-shadow: 0px 0px 10px #ffffff29;
+    opacity: 0.7;
+    transform: skewX(-20deg);
+    margin-left: -30px;
+    padding-left: 10px;
+    margin-right: 2px;
+    font-size: 12px;
+        display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__box-overlay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0px;
+    transform: skewX(20deg);
+  }
+
+  &__value-wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__value {
+    margin-left: 10px;
+    font-size: 12px;
+  }
+
+  &__weapons {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+  }
+
+  &__gun {
+    flex-grow: 1;
+    margin-right: 2px;
+    transform: skewX(-20deg);
+    padding: 0 20px;
+    background: transparent linear-gradient(74deg, #4181ff 0%, #00378fe3 100%)
+      0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 10px #ffffff29;
+    background-color: #000;
+    opacity: 0.6;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+    font-size: 12px;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  &__overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 80px;
+    width: 200px;
+    transform: skewX(20deg);
+  }
+
+  &__weapon-img {
+    display: block;
+    transform: scale(0.7);
+    position: absolute;
+    top: 50%;
+    right: -5px;
+    transform: translateY(-50%);
+  }
+
+  &__weapon-name {
+    display: block;
+    color: #fff;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+
+  &__next-gun {
+    min-width: 230px;
+    background: transparent linear-gradient(62deg, #4181ff66 0%, #d501e4 100%)
+      0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 10px #ffffff29;
+    opacity: 0.85;
+    transform: skewX(-20deg);
+    margin-right: -30px;
+
+    &-overlay {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transform: skewX(20deg);
+      padding: 0 20px;
+    }
+
+    &-text {
+      margin-left: 10px;
+    }
+  }
+}
